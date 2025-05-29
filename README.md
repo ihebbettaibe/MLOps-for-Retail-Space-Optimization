@@ -78,7 +78,8 @@ Our system provides a comprehensive computer vision-based platform that:
 - **Performance Monitoring**: Real-time model performance tracking
 
 #### n8n Workflow Automation
-![Support process example (1)](https://github.com/user-attachments/assets/6efec00f-2242-4d71-bbe9-db9501cda820)
+![Support process example (1)](https://github.com/user-attachments/assets/8815d2e6-c1da-49fb-8194-c3eb4c2c8302)
+
 
 *Figure 1: Automated data processing and model training workflow using n8n*
 
