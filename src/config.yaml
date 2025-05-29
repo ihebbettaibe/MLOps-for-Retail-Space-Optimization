@@ -1,0 +1,10 @@
+batch_size: 32
+dropout: 0.2
+early_stopping_patience: 5
+epochs: 20
+hidden_size: 256
+input_size: 8
+learning_rate: 0.001
+num_classes: 2
+num_layers: 3
+weight_decay: 1.0e-05

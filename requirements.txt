@@ -1,7 +1,46 @@
-opencv-python
-tensorflow
-PILLOW 
-matplotlib
-seaborn
-kagglehub
-ultralytics
+# Core dependencies
+numpy>=1.21.0
+torch>=2.0.0
+torchvision>=0.15.0
+scikit-learn>=1.0.0
+pandas>=1.3.0
+
+# MLflow for experiment tracking
+mlflow>=2.0.0
+
+# Data processing and visualization
+opencv-python>=4.5.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Progress bars and utilities
+tqdm>=4.62.0
+python-dotenv>=0.19.0
+
+# Optional: GPU support for PyTorch
+# Uncomment and install the appropriate version for your CUDA version
+# torch==2.0.0+cu118 -f https://download.pytorch.org/whl/cu118/torch_stable.html
+# torchvision==0.15.0+cu118 -f https://download.pytorch.org/whl/cu118/torch_stable.html
+
+# Video processing
+ffmpeg-python>=0.2.0
+ffmpeg>=1.4  # System ffmpeg
+
+# Utilities
+PyYAML>=5.4.0
+requests>=2.26.0
+pillow>=8.3.1
+
+# Development
+pytest>=6.2.0
+black>=21.7b0
+flake8>=3.9.0
+
+# Added psutil
+psutil>=5.9.0
+
+# Added streamlit
+streamlit>=1.0.0
+
+# Added plotly
+plotly>=5.3.0

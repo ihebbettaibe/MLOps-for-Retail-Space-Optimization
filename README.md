@@ -1,25 +1,114 @@
-# Retail Behavior Analysis System
+# MLOps for Retail Space Optimization
 
-A computer vision-based system for analyzing customer behavior in retail stores using CCTV footage.
+## Academic Project Information
+**Tunisian Republic**  
+Ministry of Higher Education and Scientific Research  
+University of Carthage  
+Higher School of Communications of Tunis  
+
+**PROJECT REPORT P2M**  
+MLOps for Retail Space Optimization  
+
+**By**  
+Iheb Ben Taieb  
+Zeineb Louati  
+
+**Supervised By**  
+Asma Ben Letaifa  
+
+**Academic Year**: 2024 - 2025
+
+## Project Overview
+A computer vision-based system for analyzing customer behavior in retail stores using CCTV footage. This system includes behavior classification, heatmap generation, and comprehensive analytics.
+
+## Features
+
+- Real-time customer tracking and detection using YOLOv8
+- Behavior classification:
+  - Hesitant
+  - Decisive
+  - Confused
+  - Interested
+  - Disinterested
+  - Frustrated
+- Heatmap generation for customer movement patterns
+- Zone analysis and traffic flow visualization
+- Behavior trend analysis
+- MLflow integration for experiment tracking
+- Interactive dashboard using Streamlit
+
+## System Architecture
+
+### Overview
+Our system combines computer vision models, behavior analysis algorithms, and automation workflows to analyze retail store footage and extract meaningful data about customer movements and behaviors.
+
+### Architecture Diagrams
+[Placeholder for architecture diagrams]
+- System Overview Diagram
+- Use Case Diagram
+- Class Diagram
+- Sequence Diagram
+
+### Key Components
+1. **Video Processing Pipeline**
+   - Multi-camera video capture
+   - YOLOv8 person detection
+   - Movement tracking and analysis
+
+2. **Behavior Analysis**
+   - LSTM-GRU hybrid model
+   - Real-time behavior classification
+   - Pattern recognition
+
+3. **MLOps Integration**
+   - MLflow experiment tracking
+   - Model versioning
+   - Performance monitoring
+
+4. **Automation Workflow**
+   - n8n workflow automation
+   - Automated data processing
+   - Real-time dashboard updates
+
+## Dashboard Screenshots
+[Placeholder for dashboard screenshots]
+- Main Dashboard View
+- Heatmap Visualization
+- Behavior Analytics
+- MLflow Integration Interface
 
 ## Project Structure
 ```
-retail_analytics/
-├── data/
-│   ├── raw/              # Original DAV video files
-│   ├── processed/        # Converted MP4 files
-│   └── training/         # Training data and labels
-├── models/
-│   ├── weights/          # Model weights
-│   └── checkpoints/      # Training checkpoints
-├── src/
-│   ├── data/            # Data processing scripts
-│   ├── models/          # Model architecture
-│   ├── utils/           # Utility functions
-│   └── visualization/   # Visualization tools
-├── notebooks/           # Jupyter notebooks for analysis
-├── tests/              # Unit tests
-└── results/            # Analysis results and reports
+p2m/
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+│
+├── src/                    # All source code here
+│   ├── __init__.py
+│   ├── heatmap.py
+│   ├── train_behavior_classifier.py
+│   ├── run_mlflow.py
+│   ├── dashboard.py
+│   ├── behavior_detector.py
+│   ├── mlops_pipeline.py
+│   ├── prepare_training_data.py
+│   └── config.yaml
+│
+├── tests/                  # All test code here
+│   └── (test files)
+│
+├── notebooks/              # Jupyter notebooks
+│   └── (notebook files)
+│
+├── models/                 # Model weights/checkpoints (ignored by git)
+├── data/                   # Data (ignored by git)
+├── datap2m/                # Video data (ignored by git)
+├── model_registry/         # Model registry (ignored by git)
+│
+└── scripts/                # Utility scripts
+    └── setup_directories.ps1
 ```
 
 ## Setup Instructions
@@ -39,63 +128,53 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. **Data Preparation**:
+2. **Running the Heatmap Analysis**:
 ```bash
-# Convert DAV files to MP4
-python src/data/convert_videos.py --input_dir data/raw --output_dir data/processed
-
-# Extract tracking data
-python src/data/prepare_training_data.py --video_path data/processed/camera1.mp4 --output data/training/tracks.json
+# Generate heatmap from video
+python src/heatmap.py
 ```
 
-3. **Model Training**:
+3. **Running the Behavior Analysis**:
 ```bash
 # Train behavior classifier
-python src/models/train_behavior_classifier.py --data_path data/training/tracks.json --output_dir models/weights
+python src/train_behavior_classifier.py
+
+# Run behavior detection
+python src/behavior_detector.py
 ```
 
-4. **Run Analysis**:
+4. **Viewing the Dashboard**:
 ```bash
-# Analyze video
-python src/analyze_video.py --video_path data/processed/camera1.mp4 --model_path models/weights/best_model.pth
+# Launch the Streamlit dashboard
+streamlit run src/dashboard.py
 ```
 
-## Usage
+## Technologies Used
 
-1. **Data Collection**:
-   - Place your DAV video files in `data/raw/`
-   - Run the conversion script to convert to MP4
-   - Use the tracking script to extract customer trajectories
+- **Core Technologies**:
+  - Python
+  - YOLOv8
+  - PyTorch
+  - OpenCV
+  - FFmpeg
 
-2. **Model Training**:
-   - Label the extracted tracks with behavior categories
-   - Train the behavior classifier
-   - Monitor training with Weights & Biases
+- **MLOps & Monitoring**:
+  - MLflow
+  - Weights & Biases
+  - n8n
 
-3. **Analysis**:
-   - Run analysis on new videos
-   - View heatmaps and behavior trends
-   - Generate analytics reports
-
-## Features
-
-- Real-time customer tracking
-- Behavior classification:
-  - Hesitant
-  - Decisive
-  - Confused
-  - Interested
-  - Disinterested
-  - Frustrated
-- Heatmap generation
-- Zone analysis
-- Traffic flow visualization
-- Behavior trend analysis
-
-## Requirements
-
-See `requirements.txt` for full list of dependencies.
+- **Web Interface**:
+  - Streamlit
+  - Plotly
 
 ## License
 
-MIT License 
+MIT License
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request 

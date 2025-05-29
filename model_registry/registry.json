@@ -1,0 +1,345 @@
+{
+  "8a453ff5ac1e47c8a5d726164638287d": {
+    "path": "mlruns/587040647794544297/8a453ff5ac1e47c8a5d726164638287d/artifacts/model",
+    "metrics": {
+      "best_val_loss": 22.688682556152344,
+      "final_val_accuracy": 0.0,
+      "total_epochs": 11,
+      "classification_report": {
+        "0": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1-score": 0.5,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1-score": 0.25,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.3333333333333333,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T15:41:16.826485",
+    "status": "staged"
+  },
+  "d0f06c34fdba465cb49c105c10d9514c": {
+    "path": "mlruns/587040647794544297/d0f06c34fdba465cb49c105c10d9514c/artifacts/model",
+    "metrics": {
+      "best_val_loss": 5.920677267567953e-06,
+      "final_val_accuracy": 100.0,
+      "total_epochs": 13,
+      "classification_report": {
+        "0": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 1.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "accuracy": 0.3333333333333333,
+        "macro avg": {
+          "precision": 0.16666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.25,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.16666666666666666,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T15:42:20.396944",
+    "status": "staged"
+  },
+  "40eb743bb72547e4b2a1179377a1c314": {
+    "path": "mlruns/587040647794544297/40eb743bb72547e4b2a1179377a1c314/artifacts/model",
+    "metrics": {
+      "best_val_loss": 23.450529098510742,
+      "final_val_accuracy": 33.333333333333336,
+      "total_epochs": 11,
+      "classification_report": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T15:43:13.958924",
+    "status": "staged"
+  },
+  "80574577ca1b44ab8d6d7eeae586b5bc": {
+    "path": "mlruns/587040647794544297/80574577ca1b44ab8d6d7eeae586b5bc/artifacts/model",
+    "metrics": {
+      "best_val_loss": 1.2057596445083618,
+      "final_val_accuracy": 66.66666666666667,
+      "total_epochs": 19,
+      "classification_report": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T15:44:47.227297",
+    "status": "staged"
+  },
+  "0f4fe2d77a6045bc8755535f58e60c09": {
+    "path": "mlruns/587040647794544297/0f4fe2d77a6045bc8755535f58e60c09/artifacts/model",
+    "metrics": {
+      "best_val_loss": 1.4033337831497192,
+      "final_val_accuracy": 66.66666666666667,
+      "total_epochs": 11,
+      "classification_report": {
+        "0": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.0,
+        "macro avg": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T15:45:57.005916",
+    "status": "staged"
+  },
+  "9ac217ca6a1e437c938d50acee55c9d5": {
+    "path": "mlruns/587040647794544297/9ac217ca6a1e437c938d50acee55c9d5/artifacts/model",
+    "metrics": {
+      "best_val_loss": 0.4389885663986206,
+      "final_val_accuracy": 66.66666666666667,
+      "total_epochs": 12,
+      "classification_report": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T16:48:32.411212",
+    "status": "staged"
+  },
+  "25b38e715a274fb0951ec0fb8ed2c9b1": {
+    "path": "mlruns/587040647794544297/25b38e715a274fb0951ec0fb8ed2c9b1/artifacts/model",
+    "metrics": {
+      "best_val_loss": 8.6660795211792,
+      "final_val_accuracy": 66.66666666666667,
+      "total_epochs": 11,
+      "classification_report": {
+        "0": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 2.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "weighted avg": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5333333333333333,
+          "support": 3.0
+        }
+      }
+    },
+    "config": {
+      "input_size": 8,
+      "hidden_size": 128,
+      "num_layers": 1,
+      "num_classes": 2,
+      "dropout": 0.3,
+      "learning_rate": 0.001,
+      "epochs": 50,
+      "batch_size": 32,
+      "weight_decay": 1e-05,
+      "early_stopping_patience": 10
+    },
+    "registered_at": "2025-05-26T16:49:44.316151",
+    "status": "staged"
+  }
+}
